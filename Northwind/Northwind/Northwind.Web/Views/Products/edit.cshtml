@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Northwind.Web.Models.Response.ShippersViewResult>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Shippers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.contactName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.companyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.creationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.modifyDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contactName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.companyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.creationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.modifyDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.contactName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {  id=item.id}) |
+                    @Html.ActionLink("Details", "Details", new {  id=item.id }) |
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
