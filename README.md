@@ -2,4 +2,10 @@
 
 
 
-Este es un trabajo final grupal de mi universidad, donde implementamos MVC, C#, Entity Framework, patrones de diseño, reutilización del código, refactorización y creación de API RESTful.
+Este proyecto es el trabajo final grupal de mi universidad, en el cual desarrollamos una aplicación aplicando el patrón MVC con C# y Entity Framework. Implementamos diversos patrones de diseño, priorizando la reutilización de código, la refactorización para mejorar la mantenibilidad y la creación de una API RESTful.
+
+
+
+
+
+
